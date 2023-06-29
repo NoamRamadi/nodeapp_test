@@ -2,13 +2,13 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('{ "response": "Hello From Thetips4you" }');
+    res.send('{ "response": "Hello From Noam and Ishay" }');
 });
 
-app.get('/will', function (req, res) {
-    res.send('{ "response": "Hello World" }');
+app.get('/register', function (req, res) {
+    res.send('{ "response": "Register Page" }');
 });
-app.get('/ready', function (req, res) {
+app.get('/login', function (req, res) {
     res.send('{ "response": " Great!, It works!" }');
 });
 app.listen(process.env.PORT || 3000);
